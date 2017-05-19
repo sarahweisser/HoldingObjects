@@ -11,7 +11,6 @@ public class PhoneBookTest {
 
     @Before
     public void setUp() throws InvalidPhoneNumberFormatException {
-        // given{
         book = new PhoneBook();
         entry = new PhoneBookEntry("Sarah");
         entry.addNumber("4435401564");
@@ -20,6 +19,7 @@ public class PhoneBookTest {
 
     @Test
     public void addEntryWithOneNumberToPhoneBookTest() {
+        // given
         int expectedSize = 1;
         String expectedValue = "(443) 540-1564";
 
